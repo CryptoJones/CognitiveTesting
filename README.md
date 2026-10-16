@@ -1,34 +1,56 @@
 # CognitiveTesting
 
-Personal cognitive-testing results, with the source reports attached.
+Personal cognitive-testing results. Source reports live in `reports/`
+(`YYYY-MM-DD_<test>.pdf`); the numbers are also in [`results.json`](results.json).
 
-| Date | Provider | Test type | Score |
+## Attempts
+
+| Date | Provider | Test | Score | Report |
+|---|---|---|---|---|
+| 2026-10-16 | [Cognitive Testing](https://cognitivetesting.org) | Online IQ | IQ 124 (1.6σ, 84th %ile, "Superior") | [pdf](reports/2026-10-16_cognitivetesting.pdf) |
+| 2024-12-28 | [CognitiveMetrics](https://cognitivemetrics.com) | CAIT | FSIQ 119 ±7 (89.7th %ile), GAI 120 | [pdf](reports/2024-12-28_cait.pdf) |
+
+## CAIT (Cognitive Assessment and Intelligence Test)
+
+Attempts are columns, oldest → newest. The `YYYY-MM-DD` column is a placeholder for the next retake:
+rename it to the test date, fill it in, and put the change vs. the previous column in Δ.
+Add another placeholder column after it so the pattern stays visible.
+
+### Index scores
+
+| Index | 2024-12-28 | YYYY-MM-DD | Δ |
 |---|---|---|---|
-| 2026-10-16 | [Cognitive Testing](https://cognitivetesting.org) | Online IQ test | IQ 124 (1.6σ, 84th percentile, "Superior") |
-| 2024-12-28 | [CognitiveMetrics](https://cognitivemetrics.com) | CAIT (Cognitive Assessment and Intelligence Test) | FSIQ 119 ±7 (89.7th percentile), GAI 120 |
+| FSIQ | 119 ±7 | — | — |
+| GAI | 120 | — | — |
+| VCI (Verbal Comprehension) | 119 | — | — |
+| PRI (Perceptual Reasoning) | 119 | — | — |
+| VSI (Visual Spatial) | 127 | — | — |
+| CPI (Cognitive Proficiency) | 111 | — | — |
 
-## CAIT index scores
+### Subtests (scaled score / percentile)
 
-| Index | Score |
-|---|---|
-| VCI (Verbal Comprehension) | 119 |
-| PRI (Perceptual Reasoning) | 119 |
-| VSI (Visual Spatial) | 127 |
-| CPI (Cognitive Proficiency) | 111 |
+| Subtest | Index | 2024-12-28 | YYYY-MM-DD | Δ |
+|---|---|---|---|---|
+| Vocabulary | VCI | 15 / 95.2 | — | — |
+| General Knowledge | VCI | 12 / 74.8 | — | — |
+| Figure Weights | PRI | 13 / 84.1 | — | — |
+| Visual Puzzles | PRI | 14 / 90.9 | — | — |
+| Block Design | VSI | 16 / 97.7 | — | — |
+| Digit Span | WMI | 13 / 84.1 | — | — |
+| Symbol Search | PSI | 11 / 63.1 | — | — |
 
-## CAIT subtest scores
+## Online IQ (Cognitive Testing)
 
-| Subtest | Index | Scaled score | Percentile |
+| Metric | 2026-10-16 | YYYY-MM-DD | Δ |
 |---|---|---|---|
-| Vocabulary | VCI | 15 | 95.2 |
-| General Knowledge | VCI | 12 | 74.8 |
-| Figure Weights | PRI | 13 | 84.1 |
-| Visual Puzzles | PRI | 14 | 90.9 |
-| Block Design | VSI | 16 | 97.7 |
-| Digit Span | WMI | 13 | 84.1 |
-| Symbol Search | PSI | 11 | 63.1 |
+| IQ | 124 | — | — |
+| Standard deviations | 1.6σ | — | — |
+| Percentile | 84 | — | — |
+| Classification | Superior | — | — |
 
-## Files
+## Adding an attempt
 
-- `Aaron-Clark-Cognitive-Testing.pdf` — Cognitive Testing result page
-- `CognitiveMetrics_Dashboard.pdf` — CognitiveMetrics CAIT dashboard export
+1. Drop the report in `reports/` as `YYYY-MM-DD_<test>.pdf`.
+2. Append a record to `results.json`.
+3. Add a row to **Attempts**; in the matching test's tables, fill the `YYYY-MM-DD` placeholder
+   column (rename it to the date), fill Δ, and add a fresh `YYYY-MM-DD` / Δ placeholder pair.
