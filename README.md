@@ -5,7 +5,7 @@ Personal cognitive-testing results, with the source reports attached.
 | Date | Provider | Test type | Score |
 |---|---|---|---|
 | 2026-10-16 | [Cognitive Testing](https://cognitivetesting.org) | Online IQ test | IQ 124 (1.6σ, 84th percentile, "Superior") |
-| 2026-10-16 | [CognitiveMetrics](https://cognitivemetrics.com) | CAIT (Cognitive Assessment and Intelligence Test) | FSIQ 119 ±7 (89.7th percentile), GAI 120 |
+| 2024-12-28 | [CognitiveMetrics](https://cognitivemetrics.com) | CAIT (Cognitive Assessment and Intelligence Test) | FSIQ 119 ±7 (89.7th percentile), GAI 120 |
 
 ## CAIT index scores
 
