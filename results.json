@@ -2,32 +2,80 @@
   "attempts": [
     {
       "date": "2026-10-16",
+      "medicated": true,
       "provider": "Cognitive Testing",
       "provider_url": "https://cognitivetesting.org",
       "test": "Online IQ",
       "report": "reports/2026-10-16_cognitivetesting.pdf",
-      "scores": { "IQ": 124 },
+      "scores": {
+        "IQ": 124
+      },
       "sd": 1.6,
       "percentile": 84,
       "classification": "Superior"
     },
     {
       "date": "2024-12-28",
+      "medicated": false,
       "provider": "CognitiveMetrics",
       "provider_url": "https://cognitivemetrics.com",
       "test": "CAIT",
       "report": "reports/2024-12-28_cait.pdf",
-      "scores": { "FSIQ": 119, "FSIQ_ci": 7, "GAI": 120 },
+      "scores": {
+        "FSIQ": 119,
+        "FSIQ_ci": 7,
+        "GAI": 120
+      },
       "percentile": 89.7,
-      "indices": { "VCI": 119, "PRI": 119, "VSI": 127, "CPI": 111 },
+      "indices": {
+        "VCI": 119,
+        "PRI": 119,
+        "VSI": 127,
+        "CPI": 111
+      },
       "subtests": [
-        { "name": "Vocabulary",        "index": "VCI", "scaled": 15, "percentile": 95.2 },
-        { "name": "General Knowledge", "index": "VCI", "scaled": 12, "percentile": 74.8 },
-        { "name": "Figure Weights",    "index": "PRI", "scaled": 13, "percentile": 84.1 },
-        { "name": "Visual Puzzles",    "index": "PRI", "scaled": 14, "percentile": 90.9 },
-        { "name": "Block Design",      "index": "VSI", "scaled": 16, "percentile": 97.7 },
-        { "name": "Digit Span",        "index": "WMI", "scaled": 13, "percentile": 84.1 },
-        { "name": "Symbol Search",     "index": "PSI", "scaled": 11, "percentile": 63.1 }
+        {
+          "name": "Vocabulary",
+          "index": "VCI",
+          "scaled": 15,
+          "percentile": 95.2
+        },
+        {
+          "name": "General Knowledge",
+          "index": "VCI",
+          "scaled": 12,
+          "percentile": 74.8
+        },
+        {
+          "name": "Figure Weights",
+          "index": "PRI",
+          "scaled": 13,
+          "percentile": 84.1
+        },
+        {
+          "name": "Visual Puzzles",
+          "index": "PRI",
+          "scaled": 14,
+          "percentile": 90.9
+        },
+        {
+          "name": "Block Design",
+          "index": "VSI",
+          "scaled": 16,
+          "percentile": 97.7
+        },
+        {
+          "name": "Digit Span",
+          "index": "WMI",
+          "scaled": 13,
+          "percentile": 84.1
+        },
+        {
+          "name": "Symbol Search",
+          "index": "PSI",
+          "scaled": 11,
+          "percentile": 63.1
+        }
       ]
     }
   ]
